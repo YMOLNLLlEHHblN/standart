@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гарантия — Стандарт чистоты</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ТОП-БАР ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__geo">📍 Челябинск</div>
+    <nav class="topbar__menu">
+      <a href="about.html">О компании</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html">Оплата</a>
+      <a href="business.html">Для бизнеса</a>
+      <a href="blog.html">Блог</a>
+      <a href="loyalty.html">Программа лояльности</a>
+      <a href="careers.html">Вакансии</a>
+    </nav>
+    <a href="tel:+79227370808" class="topbar__phone">📞 +7 (922) 737-08-08</a>
+    <button class="btn-call" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+</div>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Стандарт чистоты"
+           onerror="this.outerHTML='<div style=\'font-weight:900;font-size:22px;line-height:1;color:#1a1a1a;letter-spacing:1px\'>СТАНДАРТ<br><span style=\'color:#FF6A00\'>ЧИСТОТЫ</span></div>'">
+    </a>
+    <a href="catalog.html" class="btn-catalog">
+      <span class="bars"><span></span><span></span><span></span></span>
+      КАТАЛОГ
+    </a>
+    <a href="delivery.html" class="btn-where">ГДЕ КУПИТЬ</a>
+    <div class="search">
+      <input type="text" placeholder="Поиск по ключевым словам">
+      <button>🔍</button>
+    </div>
+    <div class="header__icons">
+      <a href="favorites.html" class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        Избранное
+        <span class="h-icon__counter">0</span>
+      </a>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Войти
+      </div>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        Корзина
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ХЛЕБНЫЕ КРОШКИ ===== -->
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a>
+    <span>/</span>
+    <span>Гарантия</span>
+  </div>
+</div>
+
+<!-- ===== КОНТЕНТ ===== -->
+<div class="container page-wrap">
+
+  <h1 class="page-title">Гарантия</h1>
+
+  <!-- Вступление -->
+  <div class="content-block">
+    <p class="lead">Мы уверены в качестве нашей продукции и предоставляем <strong>гарантию на все товары</strong>. Если что-то пойдёт не так — мы всегда поможем.</p>
+  </div>
+
+  <!-- Уведомление -->
+  <div class="notice">
+    <div class="notice__icon">🛡️</div>
+    <div class="notice__text">
+      <strong>Гарантия качества на всю продукцию.</strong><br>
+      Мы работаем только с проверенными поставщиками и отвечаем за качество каждого товара.
+    </div>
+  </div>
+
+  <!-- Что мы гарантируем -->
+  <div class="content-block">
+    <h2>Что мы гарантируем</h2>
+  </div>
+
+  <div class="delivery-cards">
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">✅</div>
+      <div class="delivery-card__title">Качество товара</div>
+      <div class="delivery-card__text">
+        Вся продукция соответствует<br>заявленным характеристикам
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">📅</div>
+      <div class="delivery-card__title">Срок годности</div>
+      <div class="delivery-card__text">
+        Отправляем товары<br>со свежими сроками
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">🔧</div>
+      <div class="delivery-card__title">Без брака</div>
+      <div class="delivery-card__text">
+        Проверяем каждую партию<br>перед отправкой
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">💬</div>
+      <div class="delivery-card__title">Поддержка</div>
+      <div class="delivery-card__text">
+        Консультируем по применению<br>и помогаем с выбором
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Что делать если товар бракованный -->
+  <div class="content-block" style="margin-top: 50px;">
+    <h2>Что делать, если товар бракованный</h2>
+    <p>Если вы получили товар с дефектом или он не соответствует описанию — свяжитесь с нами в течение <strong>14 дней</strong> с момента покупки. Мы решим вопрос максимально быстро.</p>
+
+    <p><strong>Порядок действий:</strong></p>
+    <ol class="steps-list">
+      <li>Свяжитесь с нами по телефону или через форму обратной связи</li>
+      <li>Опишите проблему и пришлите фото товара</li>
+      <li>Мы рассмотрим обращение в течение 1–2 рабочих дней</li>
+      <li>Заменим товар на качественный или вернём деньги</li>
+    </ol>
+  </div>
+
+  <!-- Условия гарантии -->
+  <div class="content-block">
+    <h2>Условия гарантии</h2>
+    <ul class="content-list">
+      <li>гарантия действует в течение 14 дней с момента покупки</li>
+      <li>товар должен быть в оригинальной упаковке</li>
+      <li>необходим документ, подтверждающий покупку (чек, накладная)</li>
+      <li>гарантия не распространяется на повреждения, возникшие по вине покупателя</li>
+      <li>гарантия не действует, если товар использовался с нарушением инструкции</li>
+    </ul>
+  </div>
+
+  <!-- Что НЕ покрывается -->
+  <div class="content-block">
+    <h2>Что не входит в гарантию</h2>
+    <ul class="content-list">
+      <li>повреждения, возникшие при неправильном использовании</li>
+      <li>естественный износ товара</li>
+      <li>повреждения при транспортировке покупателем</li>
+      <li>использование товара не по назначению</li>
+    </ul>
+  </div>
+
+  <!-- FAQ -->
+  <div class="content-block">
+    <h2>Частые вопросы</h2>
+
+    <div class="faq">
+      <div class="faq__item">
+        <div class="faq__q">Сколько действует гарантия?</div>
+        <div class="faq__a">14 дней с момента покупки. Если в течение этого срока обнаружится дефект — заменим товар или вернём деньги.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__q">Что делать, если товар пришёл повреждённым?</div>
+        <div class="faq__a">Свяжитесь с нами в день получения, пришлите фото — мы оперативно решим вопрос и заменим товар.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__q">Кто оплачивает доставку при возврате брака?</div>
+        <div class="faq__a">Если брак подтверждён — расходы на доставку берём на себя мы.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__q">Можно ли обменять товар на другой?</div>
+        <div class="faq__a">Да, в течение 14 дней вы можете обменять товар на аналогичный или другой из нашего ассортимента с перерасчётом стоимости.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Акцентный блок -->
+  <div class="content-block content-block--accent">
+    <p>Возникла проблема с товаром?</p>
+    <p class="cta-text">Свяжитесь с нами — решим вопрос быстро.</p>
+    <button class="btn-call btn-call--lg" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+
+</div>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>СТАНДАРТ ЧИСТОТЫ</h4>
+        <p>Профессиональная автохимия и автокосметика. Оптовые и розничные поставки по всей России.</p>
+      </div>
+      <div>
+  <h4>Каталог</h4>
+  <a href="catalog.html">Шампуни</a>
+  <a href="catalog.html">Чернение</a>
+  <a href="catalog.html">Химчистка</a>
+  <a href="catalog.html">Защита</a>
+</div>
+      <div>
+        <h4>Покупателям</h4>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="warranty.html">Гарантия</a>
+        <a href="return.html">Возврат</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+79227370808">+7 (922) 737-08-08</a>
+        <a href="#">г. Челябинск, 2-я Базовая, 56</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 Стандарт чистоты. Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== МОДАЛКА ===== -->
+<div class="modal-overlay" id="callModal">
+  <div class="modal">
+    <button class="modal__close" onclick="closeCallModal()">×</button>
+    <div class="modal__title">Заказать<br>звонок менеджера</div>
+    <input type="tel" class="modal__input" id="phoneInput" placeholder="+7 (___) ___-__-__" maxlength="18">
+    <p class="modal__hint">Для обратной связи вам достаточно указать номер телефона.</p>
+    <button class="modal__btn modal__btn--primary" id="submitCall" disabled>Заказать обратный звонок</button>
+    <button class="modal__btn modal__btn--cancel" onclick="closeCallModal()">Отмена</button>
+  </div>
+</div>
+
+<!-- Кнопка "Наверх" -->
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/favorites.js"></script>
+</body>
+</html>

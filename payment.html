@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оплата — Стандарт чистоты</title>
+
+<!-- Стили -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ТОП-БАР ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__geo">📍 Челябинск</div>
+    <nav class="topbar__menu">
+      <a href="about.html">О компании</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html" class="active">Оплата</a>
+      <a href="business.html">Для бизнеса</a>
+      <a href="blog.html">Блог</a>
+      <a href="loyalty.html">Программа лояльности</a>
+      <a href="careers.html">Вакансии</a>
+    </nav>
+    <a href="tel:+79227370808" class="topbar__phone">📞 +7 (922) 737-08-08</a>
+    <button class="btn-call" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+</div>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Стандарт чистоты"
+           onerror="this.outerHTML='<div style=\'font-weight:900;font-size:22px;line-height:1;color:#1a1a1a;letter-spacing:1px\'>СТАНДАРТ<br><span style=\'color:#FF6A00\'>ЧИСТОТЫ</span></div>'">
+    </a>
+
+    <a href="catalog.html" class="btn-catalog">
+      <span class="bars"><span></span><span></span><span></span></span>
+      КАТАЛОГ
+    </a>
+    <a href="delivery.html" class="btn-where">ГДЕ КУПИТЬ</a>
+
+    <div class="search">
+      <input type="text" placeholder="Поиск по ключевым словам">
+      <button>🔍</button>
+    </div>
+
+    <div class="header__icons">
+      <a href="favorites.html" class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        Избранное
+        <span class="h-icon__counter">0</span>
+      </a>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        Войти
+      </div>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+        </svg>
+        Корзина
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ХЛЕБНЫЕ КРОШКИ ===== -->
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a>
+    <span>/</span>
+    <span>Оплата</span>
+  </div>
+</div>
+
+<!-- ===== КОНТЕНТ ===== -->
+<div class="container page-wrap">
+
+  <h1 class="page-title">Оплата</h1>
+
+  <!-- Вступление -->
+  <div class="content-block">
+    <p class="lead">Мы стараемся сделать процесс покупки максимально удобным. Ниже — все доступные способы оплаты.</p>
+  </div>
+
+  <!-- Уведомление про СБП -->
+  <div class="notice">
+    <div class="notice__icon">⚡</div>
+    <div class="notice__text">
+      <strong>Скоро — оплата через СБП (Систему быстрых платежей).</strong><br>
+      Мы уже работаем над подключением. Следите за обновлениями — оплата по QR-коду появится в ближайшее время.
+    </div>
+  </div>
+
+  <!-- Способы оплаты -->
+  <div class="content-block">
+    <h2>Способы оплаты</h2>
+  </div>
+
+  <div class="delivery-cards">
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">💵</div>
+      <div class="delivery-card__title">Наличными</div>
+      <div class="delivery-card__text">
+        При самовывозе по адресу:<br>г. Челябинск,<br>ул. 2-я Базовая, 56
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">💳</div>
+      <div class="delivery-card__title">Картой</div>
+      <div class="delivery-card__text">
+        Банковской картой<br>при получении заказа<br>(терминал на месте)
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">🏢</div>
+      <div class="delivery-card__title">Для юрлиц</div>
+      <div class="delivery-card__text">
+        Безналичный расчёт<br>по счёту<br>с полным пакетом документов
+      </div>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card__icon">⚡</div>
+      <div class="delivery-card__title">СБП</div>
+      <div class="delivery-card__text">
+        Оплата по QR-коду<br><span style="color:var(--orange);font-weight:bold;">Скоро</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Подробнее про безнал -->
+  <div class="content-block" style="margin-top: 50px;">
+    <h2>Оплата для юридических лиц</h2>
+    <p>Мы работаем с компаниями и организациями по <strong>безналичному расчёту</strong>. После оформления заказа мы выставляем счёт, который можно оплатить с расчётного счёта организации.</p>
+    <p><strong>Что мы предоставляем:</strong></p>
+    <ul class="content-list">
+      <li>счёт на оплату</li>
+      <li>УПД / товарную накладную</li>
+      <li>полный пакет бухгалтерских документов</li>
+      <li>индивидуальные условия для постоянных клиентов</li>
+    </ul>
+    <p>Для оформления заказа по счёту свяжитесь с нами по телефону или оставьте заявку через сайт.</p>
+  </div>
+
+  <!-- Как оплатить -->
+  <div class="content-block">
+    <h2>Как проходит оплата</h2>
+    <ol class="steps-list">
+      <li>Оформляете заказ на сайте или по телефону</li>
+      <li>Менеджер связывается с вами и подтверждает детали</li>
+      <li>Выбираете удобный способ оплаты</li>
+      <li>Оплачиваете заказ</li>
+      <li>Получаете товар и документы</li>
+    </ol>
+  </div>
+
+  <!-- Возврат -->
+  <div class="content-block">
+    <h2>Возврат средств</h2>
+    <p>Если по какой-то причине заказ вам не подошёл, вы можете вернуть товар в течение <strong>14 дней</strong> с момента покупки. Возврат денежных средств осуществляется тем же способом, которым была произведена оплата.</p>
+    <p>Для оформления возврата свяжитесь с нами по телефону <a href="tel:+79227370808" style="color:var(--orange);font-weight:bold;">+7 (922) 737-08-08</a> или оставьте заявку на сайте.</p>
+  </div>
+
+  <!-- Акцентный блок -->
+  <div class="content-block content-block--accent">
+    <p>Остались вопросы по оплате?</p>
+    <p class="cta-text">Позвоните нам — поможем разобраться.</p>
+    <button class="btn-call btn-call--lg" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+
+</div>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>СТАНДАРТ ЧИСТОТЫ</h4>
+        <p>Профессиональная автохимия и автокосметика. Оптовые и розничные поставки по всей России.</p>
+      </div>
+      <div>
+  <h4>Каталог</h4>
+  <a href="catalog.html">Шампуни</a>
+  <a href="catalog.html">Чернение</a>
+  <a href="catalog.html">Химчистка</a>
+  <a href="catalog.html">Защита</a>
+</div>
+      <div>
+        <h4>Покупателям</h4>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="warranty.html">Гарантия</a>
+        <a href="return.html">Возврат</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+79227370808">+7 (922) 737-08-08</a>
+        <a href="contact.html">г. Челябинск, 2-я Базовая, 56</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 Стандарт чистоты. Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== МОДАЛКА ===== -->
+<div class="modal-overlay" id="callModal">
+  <div class="modal">
+    <button class="modal__close" onclick="closeCallModal()">×</button>
+    <div class="modal__title">Заказать<br>звонок менеджера</div>
+
+    <input type="tel" class="modal__input" id="phoneInput"
+           placeholder="+7 (___) ___-__-__" maxlength="18">
+
+    <p class="modal__hint">Для обратной связи вам достаточно указать номер телефона.</p>
+
+    <button class="modal__btn modal__btn--primary" id="submitCall" disabled>
+      Заказать обратный звонок
+    </button>
+    <button class="modal__btn modal__btn--cancel" onclick="closeCallModal()">
+      Отмена
+    </button>
+  </div>
+</div>
+
+<!-- Кнопка "Наверх" -->
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- Скрипты -->
+<script src="js/main.js"></script>
+<script src="js/favorites.js"></script>
+</body>
+</html>

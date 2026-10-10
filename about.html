@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О компании — Стандарт чистоты</title>
+
+<!-- Яндекс.Карты API -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU" type="text/javascript"></script>
+
+<!-- Стили -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ТОП-БАР ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__geo">📍 Челябинск</div>
+    <nav class="topbar__menu">
+      <a href="about.html" class="active">О компании</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html">Оплата</a>
+      <a href="business.html">Для бизнеса</a>
+      <a href="blog.html">Блог</a>
+      <a href="loyalty.html">Программа лояльности</a>
+      <a href="careers.html">Вакансии</a>
+    </nav>
+    <a href="tel:+79227370808" class="topbar__phone">📞 +7 (922) 737-08-08</a>
+    <button class="btn-call" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+</div>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Стандарт чистоты"
+           onerror="this.outerHTML='<div style=\'font-weight:900;font-size:22px;line-height:1;color:#1a1a1a;letter-spacing:1px\'>СТАНДАРТ<br><span style=\'color:#FF6A00\'>ЧИСТОТЫ</span></div>'">
+    </a>
+
+    <a href="catalog.html" class="btn-catalog">
+      <span class="bars"><span></span><span></span><span></span></span>
+      КАТАЛОГ
+    </a>
+    <a href="delivery.html" class="btn-where">ГДЕ КУПИТЬ</a>
+
+    <div class="search">
+      <input type="text" placeholder="Поиск по ключевым словам">
+      <button>🔍</button>
+    </div>
+
+    <div class="header__icons">
+      <a href="favorites.html" class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        Избранное
+        <span class="h-icon__counter">0</span>
+      </a>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        Войти
+      </div>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+        </svg>
+        Корзина
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ХЛЕБНЫЕ КРОШКИ ===== -->
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a>
+    <span>/</span>
+    <span>О компании</span>
+  </div>
+</div>
+
+<!-- ===== КОНТЕНТ СТРАНИЦЫ ===== -->
+<div class="container page-wrap">
+
+  <h1 class="page-title">О компании</h1>
+
+  <!-- Вступление -->
+  <div class="content-block">
+    <p class="lead">Автомоечный комплекс <strong>«Стандарт Чистоты»</strong> — это современный сервис по уходу за транспортом, расположенный по адресу: г. Челябинск, ул. 2-я Базовая, 56. Мы открылись на уже знакомом для многих месте, но вышли на новый уровень качества, сервиса и возможностей.</p>
+    <p>Наша главная задача — обеспечить безупречную чистоту любого транспорта <strong>быстро, безопасно и профессионально</strong>. Мы работаем как с частными клиентами, так и с юридическими лицами, предлагая удобные условия сотрудничества и стабильный результат.</p>
+  </div>
+
+  <!-- Работаем с любым транспортом -->
+  <div class="content-block">
+    <h2>Работаем с любым транспортом</h2>
+    <p>Мы обслуживаем:</p>
+    <ul class="content-list">
+      <li>легковые автомобили</li>
+      <li>внедорожники и коммерческий транспорт</li>
+      <li>грузовые автомобили</li>
+      <li>фуры и тягачи</li>
+    </ul>
+    <p>Благодаря просторным боксам и профессиональному оборудованию, мы можем качественно и оперативно мыть даже крупногабаритную технику.</p>
+  </div>
+
+  <!-- Современный подход -->
+  <div class="content-block">
+    <h2>Современный подход к мойке</h2>
+    <p>В работе мы используем:</p>
+    <ul class="content-list">
+      <li>профессиональную автохимию</li>
+      <li>современное оборудование</li>
+      <li>безопасные технологии очистки</li>
+    </ul>
+    <p>Это позволяет эффективно удалять загрязнения, не повреждая лакокрасочное покрытие и элементы автомобиля.</p>
+  </div>
+
+  <!-- Услуги комплекса -->
+  <div class="content-block">
+    <h2>Услуги комплекса</h2>
+    <p>Мы предлагаем широкий спектр услуг:</p>
+    <ul class="content-list">
+      <li>мойка кузова любой сложности</li>
+      <li>предпродажная подготовка</li>
+      <li>химчистка салона</li>
+      <li>полировка фар</li>
+      <li>озонация и устранение запахов</li>
+      <li>дополнительные услуги по уходу за автомобилем</li>
+    </ul>
+  </div>
+
+  <!-- Сотрудничество с юрлицами -->
+  <div class="content-block">
+    <h2>Сотрудничество с юридическими лицами</h2>
+    <p>Для компаний и организаций мы предлагаем:</p>
+    <ul class="content-list">
+      <li>удобные формы оплаты</li>
+      <li>обслуживание автопарков</li>
+      <li>индивидуальные условия и гибкие тарифы</li>
+      <li>полный пакет документов</li>
+    </ul>
+    <p>Мы понимаем, насколько важно поддерживать транспорт в чистоте для бизнеса, и гарантируем надежное и стабильное обслуживание.</p>
+  </div>
+
+  <!-- Почему выбирают нас -->
+  <div class="content-block">
+    <h2>Почему выбирают нас</h2>
+    <div class="advantages-grid">
+      <div class="advantage">
+        <div class="advantage__icon">📍</div>
+        <div class="advantage__text">Удобное расположение</div>
+      </div>
+      <div class="advantage">
+        <div class="advantage__icon">🕒</div>
+        <div class="advantage__text">Работа 24 часа</div>
+      </div>
+      <div class="advantage">
+        <div class="advantage__icon">👥</div>
+        <div class="advantage__text">Опытная команда</div>
+      </div>
+      <div class="advantage">
+        <div class="advantage__icon">🎯</div>
+        <div class="advantage__text">Индивидуальный подход</div>
+      </div>
+      <div class="advantage">
+        <div class="advantage__icon">⭐</div>
+        <div class="advantage__text">Высокое качество услуг</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Финал -->
+  <div class="content-block content-block--accent">
+    <p>Автомоечный комплекс <strong>«Стандарт Чистоты»</strong> — это место, где ваш автомобиль получит профессиональный уход, независимо от его размера и назначения.</p>
+    <p class="cta-text">Приезжайте к нам и убедитесь в качестве сервиса лично!</p>
+    <button class="btn-call btn-call--lg" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+
+</div>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>СТАНДАРТ ЧИСТОТЫ</h4>
+        <p>Профессиональная автохимия и автокосметика. Оптовые и розничные поставки по всей России.</p>
+      </div>
+      <div>
+  <h4>Каталог</h4>
+  <a href="catalog.html">Шампуни</a>
+  <a href="catalog.html">Чернение</a>
+  <a href="catalog.html">Химчистка</a>
+  <a href="catalog.html">Защита</a>
+</div>
+      <div>
+        <h4>Покупателям</h4>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="warranty.html">Гарантия</a>
+        <a href="return.html">Возврат</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+79227370808">+7 (922) 737-08-08</a>
+        <a href="contact.html">г. Челябинск, 2-я Базовая, 56</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 Стандарт чистоты. Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== МОДАЛКА «ЗАКАЗАТЬ ЗВОНОК» ===== -->
+<div class="modal-overlay" id="callModal">
+  <div class="modal">
+    <button class="modal__close" onclick="closeCallModal()">×</button>
+    <div class="modal__title">Заказать<br>звонок менеджера</div>
+
+    <input type="tel" class="modal__input" id="phoneInput"
+           placeholder="+7 (___) ___-__-__" maxlength="18">
+
+    <p class="modal__hint">Для обратной связи вам достаточно указать номер телефона.</p>
+
+    <button class="modal__btn modal__btn--primary" id="submitCall" disabled>
+      Заказать обратный звонок
+    </button>
+    <button class="modal__btn modal__btn--cancel" onclick="closeCallModal()">
+      Отмена
+    </button>
+  </div>
+</div>
+
+<!-- Кнопка "Наверх" -->
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- Скрипты -->
+<script src="js/main.js"></script>
+<script src="js/favorites.js"></script>
+
+</body>
+</html>

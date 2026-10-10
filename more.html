@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подробнее — Стандарт чистоты</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__geo">📍 Челябинск</div>
+    <nav class="topbar__menu">
+      <a href="about.html">О компании</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html">Оплата</a>
+      <a href="business.html">Для бизнеса</a>
+      <a href="blog.html">Блог</a>
+      <a href="loyalty.html">Программа лояльности</a>
+      <a href="careers.html">Вакансии</a>
+    </nav>
+    <a href="tel:+79227370808" class="topbar__phone">📞 +7 (922) 737-08-08</a>
+    <button class="btn-call" onclick="openCallModal()">Заказать звонок</button>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Стандарт чистоты"
+           onerror="this.outerHTML='<div style=\'font-weight:900;font-size:22px;line-height:1;color:#1a1a1a;letter-spacing:1px\'>СТАНДАРТ<br><span style=\'color:#FF6A00\'>ЧИСТОТЫ</span></div>'">
+    </a>
+
+    <a href="catalog.html" class="btn-catalog">
+      <span class="bars"><span></span><span></span><span></span></span>
+      КАТАЛОГ
+    </a>
+    <a href="delivery.html" class="btn-where">ГДЕ КУПИТЬ</a>
+
+    <div class="search">
+      <input type="text" placeholder="Поиск по ключевым словам">
+      <button>🔍</button>
+    </div>
+
+    <div class="header__icons">
+      <a href="favorites.html" class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        Избранное
+        <span class="h-icon__counter">0</span>
+      </a>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        Войти
+      </div>
+      <div class="h-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+        </svg>
+        Корзина
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a>
+    <span>/</span>
+    <span>Подробнее</span>
+  </div>
+</div>
+
+<main class="container more-page">
+  <section class="detail-hero">
+    <div class="detail-hero__content">
+      <span class="detail-hero__badge">Стандарт чистоты</span>
+      <h1>Профессиональная автохимия для вашего бизнеса</h1>
+      <p>
+        Мы поставляем сертифицированную автохимию, расходники и средства ухода для автомоек,
+        детейлинг-центров, сервисов и автопарков. Работаем с проверенными формулами, даём
+        экспертную консультацию и помогаем подобрать состав под задачи вашего бизнеса.
+      </p>
+
+      <div class="detail-hero__actions">
+        <a href="catalog.html" class="btn-main">Смотреть каталог</a>
+        <button class="btn-secondary" onclick="openCallModal()">Получить консультацию</button>
+      </div>
+
+      <ul class="detail-hero__stats">
+        <li>
+          <strong>2500+</strong>
+          <span>закупок в месяц</span>
+        </li>
+        <li>
+          <strong>24/7</strong>
+          <span>поддержка клиентов</span>
+        </li>
+        <li>
+          <strong>98%</strong>
+          <span>повторных заказов</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="detail-hero__visual">
+      <div class="product-showcase">
+        <div class="product-bottle">
+          <span class="product-bottle__tag">ТОП</span>
+          <div class="product-bottle__label">X-WASH / 20 л</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-panel">
+    <div class="section-heading">
+      <h2>Почему выбирают нас</h2>
+      <p>Надёжные решения для клиентов, которым важны скорость, качество и стабильность работы.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-card__icon">📦</div>
+        <h3>Оптовые цены</h3>
+        <p>Доступные условия для бизнеса, автомоек и сервисных центров.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">🧪</div>
+        <h3>Профессиональная химия</h3>
+        <p>Эффективные составы для глубокого удаления загрязнений и защиты покрытия.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">🚚</div>
+        <h3>Быстрая доставка</h3>
+        <p>Отгрузка в срок и удобная логистика по Челябинску и регионам.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">💬</div>
+        <h3>Личный менеджер</h3>
+        <p>Подберём товар под ваш автопарк, объём и бюджет.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="steps-panel">
+    <div class="section-heading">
+      <h2>Как мы работаем</h2>
+      <p>Простой и понятный процесс сотрудничества без лишней бюрократии.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-card__num">1</div>
+        <h3>Заявка</h3>
+        <p>Вы оставляете запрос, и мы быстро связываемся с вами.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-card__num">2</div>
+        <h3>Подбор</h3>
+        <p>Подбираем составы и объёмы по вашему типу бизнеса.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-card__num">3</div>
+        <h3>Согласование</h3>
+        <p>Обсуждаем цену, условия поставки и форматы сотрудничества.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-card__num">4</div>
+        <h3>Поставка</h3>
+        <p>Отправляем товар вовремя и обеспечиваем поддержку после заказа.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer-panel">
+    <div class="info-panel">
+      <div class="section-heading">
+        <h2>Для кого мы работаем</h2>
+      </div>
+
+      <ul class="offer-list">
+        <li>Автомойки и детейлинг-центры</li>
+        <li>СТО и шиномонтажные сервисы</li>
+        <li>Автопарки и коммерческий транспорт</li>
+        <li>Дилерские и сервисные центры</li>
+        <li>Клиенты, которым нужен стабильный поставщик</li>
+      </ul>
+    </div>
+
+    <div class="offer-quote">
+      <strong>Что важно для бизнеса</strong>
+      <p>
+        Нужна не просто химия, а надёжный поставщик, который понимает ритм работы, помогает с выбором
+        и не затягивает сроки. Мы делаем всё, чтобы ваши процессы были стабильными и результативными.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-panel">
+    <h2>Нужна консультация по ассортименту?</h2>
+    <p>
+      Напишите нам, и менеджер подберёт продукцию под ваши задачи: от моечных средств до защитных систем и профессионального ухода.
+    </p>
+    <button class="btn-main" onclick="openCallModal()">Оставить заявку</button>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>СТАНДАРТ ЧИСТОТЫ</h4>
+        <p>Профессиональная автохимия и автокосметика. Оптовые и розничные поставки по всей России.</p>
+      </div>
+      <div>
+        <h4>Каталог</h4>
+        <a href="catalog.html">Шампуни</a>
+        <a href="catalog.html">Чернение</a>
+        <a href="catalog.html">Химчистка</a>
+        <a href="catalog.html">Защита</a>
+      </div>
+      <div>
+        <h4>Покупателям</h4>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="warranty.html">Гарантия</a>
+        <a href="return.html">Возврат</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+79227370808">+7 (922) 737-08-08</a>
+        <a href="contact.html">г. Челябинск, 2-я Базовая, 56</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Стандарт чистоты. Все права защищены.</div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="callModal">
+  <div class="modal">
+    <button class="modal__close" onclick="closeCallModal()">×</button>
+    <div class="modal__title">Заказать<br>звонок менеджера</div>
+
+    <input type="tel" class="modal__input" id="phoneInput"
+           placeholder="+7 (___) ___-__-__" maxlength="18">
+
+    <p class="modal__hint">Для обратной связи вам достаточно указать номер телефона.</p>
+
+    <button class="modal__btn modal__btn--primary" id="submitCall" disabled>
+      Заказать обратный звонок
+    </button>
+    <button class="modal__btn modal__btn--cancel" onclick="closeCallModal()">
+      Отмена
+    </button>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/favorites.js"></script>
+
+</body>
+</html>
